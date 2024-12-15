@@ -1,14 +1,6 @@
 server:
   port: 8080
 spring:
-#  application:
-#    name: user-service
-#  cloud:
-#    config:
-#      uri: http://localhost:8888
-#      fail-fast: true
-#  config:
-#    import: "optional:configserver:"
   datasource:
     url: ${SPRING_DATASOURCE_URL}
     username: ${SPRING_DATASOURCE_USERNAME}
@@ -24,8 +16,8 @@ spring:
       client:
         registration:
           github:
-            client-id: Ov23liBrnhOnwu6hBnIP
-            client-secret: 68d9c8bc706e9bf658895b856f8e8621081dfcd3
+            client-id: Ov23ligpfzbhFnebQaCz
+            client-secret: 9f3229e5f361f12071c52c1fe8640ab218b09d2a
         provider:
           github:
             authorization-uri: https://github.com/login/oauth/authorize

@@ -2,14 +2,6 @@ server:
   port: 8080
 
 spring:
-#  application:
-#    name: order-service
-#  cloud:
-#    config:
-#      uri: http://localhost:8888
-#      fail-fast: true
-#  config:
-#    import: "configserver:"
   datasource:
     url: ${SPRING_DATASOURCE_URL}
     username: ${SPRING_DATASOURCE_USERNAME}
@@ -24,5 +16,6 @@ eureka:
     service-url:
       defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE}
   instance:
+    hostname: message-service
     non-secure-port: 8080
     prefer-ip-address: true
